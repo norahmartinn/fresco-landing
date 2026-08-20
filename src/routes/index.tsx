@@ -7,11 +7,9 @@ import { AIWatching } from "@/components/fresco/AIWatching";
 import { PriorityBars } from "@/components/fresco/PriorityBars";
 import { IngredientSpotlight } from "@/components/fresco/IngredientSpotlight";
 import { Connection } from "@/components/fresco/Connection";
-import { DishZoom } from "@/components/fresco/DishZoom";
-import { MascotAdvice } from "@/components/fresco/MascotAdvice";
-import { HumanExperience } from "@/components/fresco/HumanExperience";
 import { ImpactResult } from "@/components/fresco/ImpactResult";
 import { FinalCTA } from "@/components/fresco/FinalCTA";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -84,11 +82,9 @@ function Index() {
       <PriorityBars />
       <IngredientSpotlight />
       <Connection />
-      <DishZoom />
-      <MascotAdvice />
-      <HumanExperience />
       <ImpactResult />
       <FinalCTA />
+
     </main>
   );
 }
