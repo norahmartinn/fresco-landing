@@ -34,7 +34,7 @@ export function PriorityBars() {
             <span className="flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-secondary/70">
               <span className="pulse-dot h-2 w-2 rounded-full bg-leaf" /> prioridad en vivo
             </span>
-            <span className="font-script text-xl text-terracotta">más urgente = más visible</span>
+            <span className="font-script text-xl text-terracotta">{"\n"}</span>
           </div>
 
           <ul className="space-y-5">
