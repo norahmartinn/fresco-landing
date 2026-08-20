@@ -63,7 +63,6 @@ export function FinalCTA() {
 
       <footer className="relative mt-20 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 font-mono text-xs uppercase tracking-[0.25em] text-secondary/60">
         <span>FRESCÓ</span>
-        <span>Carrer de la Mar, 12 · València</span>
         <span>13:00–16:00 · 20:00–23:30</span>
       </footer>
     </section>
