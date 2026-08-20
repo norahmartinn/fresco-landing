@@ -86,8 +86,8 @@ export function RestaurantLayers() {
         </div>
 
         <p className="mt-8 max-w-xl font-body text-lg text-secondary/80">
-          12 ingredientes frescos entran por la puerta cada día. El sistema mira su stock,
-          su hora de llegada y las horas que les quedan.
+          12 ingredientes frescos entran por la puerta cada día. El sistema mira su stock, su hora de llegada y las horas que le quedan.
+          Cuanto más urgente es un ingrediente, más arriba sube el plato que lo usa.
         </p>
       </div>
     </section>
