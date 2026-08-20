@@ -25,7 +25,7 @@ export function PriorityBars() {
           <span className="font-mono text-xs uppercase tracking-[0.3em] text-leaf">04 — el sistema</span>
           <h2 className="mt-3 max-w-3xl text-balance text-4xl font-bold text-secondary md:text-6xl">
             9 platos fijos.
-            <span className="block text-terracotta">Cada día sube quien tiene ingredientes urgentes.</span>
+            <span className="block text-terracotta">Señalamos los que tienen ingredientes urgentes.</span>
           </h2>
         </motion.div>
 
@@ -34,7 +34,7 @@ export function PriorityBars() {
             <span className="flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-secondary/70">
               <span className="pulse-dot h-2 w-2 rounded-full bg-leaf" /> prioridad en vivo
             </span>
-            <span className="font-script text-xl text-terracotta">más urgente = más arriba</span>
+            <span className="font-script text-xl text-terracotta">más urgente = más visible</span>
           </div>
 
           <ul className="space-y-5">
@@ -68,7 +68,7 @@ export function PriorityBars() {
             ))}
           </ul>
           <p className="mt-8 font-body text-base text-secondary/70">
-            La prioridad mide cuánto de prisa tenemos en gastar los ingredientes que lleva cada plato. Así la carta siempre tira de lo más fresco antes de que se eche a perder.
+            La prioridad mide cuánto de prisa tenemos en gastar los ingredientes que lleva cada plato. Así señalamos antes los platos que evitan que lo más fresco se eche a perder.
           </p>
         </div>
       </div>

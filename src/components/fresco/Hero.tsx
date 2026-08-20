@@ -99,7 +99,7 @@ export function Hero() {
           transition={{ delay: 0.7, duration: 0.7 }}
           className="mt-6 max-w-md font-display text-lg font-medium text-secondary/70"
         >
-          La carta es fija. Lo que cambia es el orden: primero te sugerimos los platos que gastan los ingredientes más urgentes.
+          La carta es fija. Pero hoy ciertos platos se destacan: los que llevan ingredientes a punto de caducar.
         </motion.p>
       </motion.div>
 
