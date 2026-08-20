@@ -86,8 +86,7 @@ export function RestaurantLayers() {
         </div>
 
         <p className="mt-8 max-w-xl font-body text-lg text-secondary/80">
-          Las mesas, las plantas, el ruido de la cocina. Y por debajo, un sistema
-          mirando cada ingrediente que entra por la puerta.
+          {"\n"}
         </p>
       </div>
     </section>
