@@ -3,10 +3,10 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import interior from "@/assets/interior.asset.json";
 
 const pins = [
-  { label: "Albahaca", pct: 92, x: "18%", y: "34%", note: "pico de frescura" },
-  { label: "Tomate", pct: 78, x: "62%", y: "22%", note: "48h de vida" },
-  { label: "Berenjena", pct: 41, x: "76%", y: "62%", note: "en reserva" },
-  { label: "Patata", pct: 63, x: "34%", y: "70%", note: "estable" },
+  { label: "Albahaca", pct: 96, x: "18%", y: "34%", note: "18 h de vida" },
+  { label: "Pollo", pct: 88, x: "62%", y: "22%", note: "24 h · 3,00 kg" },
+  { label: "Burrata", pct: 85, x: "76%", y: "62%", note: "24 h · 1,20 kg" },
+  { label: "Patata", pct: 31, x: "34%", y: "70%", note: "120 h · sin prisa" },
 ];
 
 export function RestaurantLayers() {
@@ -86,7 +86,8 @@ export function RestaurantLayers() {
         </div>
 
         <p className="mt-8 max-w-xl font-body text-lg text-secondary/80">
-          {"\n"}
+          12 ingredientes frescos entran por la puerta cada día. El sistema mira su stock,
+          su hora de llegada y las horas que les quedan.
         </p>
       </div>
     </section>
