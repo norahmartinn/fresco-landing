@@ -1,5 +1,6 @@
 // Carta fija de FRESCÓ (9 platos) + los 12 ingredientes monitorizados.
-// La carta no cambia: lo que cambia es la prioridad con la que se muestra.
+// La carta no cambia: señalamos los platos con ingredientes más urgentes.
+
 
 export type Dish = {
   id: string;
@@ -14,63 +15,63 @@ export const dishes: Dish[] = [
     id: "P9",
     name: "Pasta al pesto con pollo",
     base: 94,
-    why: "usa albahaca que se estropea en 18 h",
+    why: "señalamos por la albahaca, que se estropea en 18 h",
     key: ["Albahaca", "Pollo", "Parmesano"],
   },
   {
     id: "P2",
     name: "Burrata con tomate y pesto",
     base: 88,
-    why: "usa burrata que vence en 24 h",
+    why: "señalamos por la burrata, que vence en 24 h",
     key: ["Burrata", "Tomate", "Albahaca"],
   },
   {
     id: "P6",
     name: "Pollo crujiente con patata y yogur",
     base: 79,
-    why: "usa pollo que hay que gastar hoy",
+    why: "señalamos por el pollo, que hay que gastar hoy",
     key: ["Pollo", "Patata", "Yogur"],
   },
   {
     id: "P5",
     name: "Gnocchi de calabacín y parmesano",
     base: 71,
-    why: "calabacín en ventana media, hay que moverlo",
+    why: "señalamos porque el calabacín está en ventana media",
     key: ["Calabacín", "Parmesano", "Albahaca"],
   },
   {
     id: "P1",
     name: "Gazpacho de tomate asado",
     base: 64,
-    why: "240 g de tomate por ración, hoy está al límite",
+    why: "señalamos por el tomate, 240 g por ración y hoy al límite",
     key: ["Tomate", "Pimiento"],
   },
   {
     id: "P4",
     name: "Croquetas de pollo y hierbas",
     base: 57,
-    why: "aprovecha el pollo del día antes de que caduque",
+    why: "señalamos para aprovechar el pollo del día antes de que caduque",
     key: ["Pollo", "Huevo", "Calabacín"],
   },
   {
     id: "P8",
     name: "Berenjena asada con garbanzos y yogur",
     base: 48,
-    why: "berenjena estable, 72 h, sin prisa",
+    why: "berenjena estable, 72 h, hoy no señalamos",
     key: ["Berenjena", "Garbanzos", "Yogur"],
   },
   {
     id: "P3",
     name: "Focaccia de verduras",
     base: 41,
-    why: "verduras de larga vida, hoy no es prioridad",
+    why: "verduras de larga vida, hoy no señalamos",
     key: ["Calabacín", "Pimiento", "Tomate"],
   },
   {
     id: "P7",
     name: "Arroz meloso de verduras",
     base: 33,
-    why: "stock holgado, se puede esperar mañana",
+    why: "stock holgado, hoy no señalamos, se puede esperar",
     key: ["Garbanzos", "Calabacín", "Parmesano"],
   },
 ];
