@@ -3,9 +3,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Mascot } from "./Mascot";
 
 const options = [
-  { q: "Tengo mucha hambre", a: "Pasta al pesto. Hoy la albahaca está insoportablemente buena." },
-  { q: "Quiero algo ligero", a: "Ensalada de tomate y hierbas. El tomate está en su punto exacto." },
-  { q: "Sorpréndeme", a: "Berenjena ahumada. Nadie la pide y todo el mundo repite." },
+  { q: "Tengo mucha hambre", a: "Pasta al pesto con pollo. La albahaca entró a las 17:00 y solo aguanta 18 h." },
+  { q: "Quiero algo ligero", a: "Gazpacho de tomate asado. 240 g de tomate por ración, y el tomate manda hoy." },
+  { q: "Sorpréndeme", a: "Berenjena asada con garbanzos y yogur. Nadie la pide y todo el mundo repite." },
 ];
 
 export function MascotAdvice() {
