@@ -40,8 +40,7 @@ export function ImpactResult() {
       <div className="mx-auto max-w-6xl px-6">
         <span className="font-mono text-xs uppercase tracking-[0.3em] text-primary/70">10 — lo que pasa después</span>
         <h2 className="mt-3 max-w-3xl text-balance text-4xl font-bold text-primary md:text-6xl">
-          Nadie viene por esto.
-          <span className="block font-script text-cream">Pero pasa igual.</span>
+          Esto es lo que está pasando
         </h2>
 
         <div className="mt-14 grid gap-6 md:grid-cols-3">
