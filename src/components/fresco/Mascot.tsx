@@ -25,7 +25,7 @@ export function Mascot({
       src={mascot.url}
       alt="Mascota de FRESCÓ"
       animate={variants[mood]}
-      style={flip ? { scaleX: -1 } : undefined}
+      style={{ scaleX: flip ? -1 : 1 }}
       className={`select-none ${className}`}
       draggable={false}
     />
