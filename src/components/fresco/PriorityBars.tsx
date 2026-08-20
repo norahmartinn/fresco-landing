@@ -24,8 +24,8 @@ export function PriorityBars() {
         >
           <span className="font-mono text-xs uppercase tracking-[0.3em] text-leaf">04 — el sistema</span>
           <h2 className="mt-3 max-w-3xl text-balance text-4xl font-bold text-secondary md:text-6xl">
-            9 platos fijos.
-            <span className="block text-terracotta">Señalamos los que tienen ingredientes urgentes.</span>
+            Nuestros platos.
+            <span className="mt-4 block text-terracotta">Te señalamos los que tienen ingredientes urgentes.</span>
           </h2>
         </motion.div>
 
