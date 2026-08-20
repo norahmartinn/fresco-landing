@@ -97,9 +97,9 @@ export function Hero() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7, duration: 0.7 }}
-          className="mt-6 max-w-sm font-display text-lg font-medium text-secondary/70"
+          className="mt-6 max-w-md font-display text-lg font-medium text-secondary/70"
         >
-          Come bien. Lo demás lo pensamos nosotros.
+          La carta es fija. Lo que cambia es el orden: primero te sugerimos los platos que gastan los ingredientes más urgentes.
         </motion.p>
       </motion.div>
 

@@ -60,7 +60,7 @@ export function AIWatching() {
           transition={{ delay: 0.8 }}
           className="relative mt-6 max-w-lg text-center font-script text-2xl text-cream/80"
         >
-          no para vigilarte a ti. para vigilar la nevera.
+          no para vigilarte a ti. para vigilar la nevera y saber qué plato pedirte primero.
         </motion.p>
 
         <div className="relative mt-10 flex max-w-3xl flex-wrap justify-center gap-3">
