@@ -7,6 +7,7 @@ import { AIWatching } from "@/components/fresco/AIWatching";
 import { PriorityBars } from "@/components/fresco/PriorityBars";
 import { IngredientSpotlight } from "@/components/fresco/IngredientSpotlight";
 import { Connection } from "@/components/fresco/Connection";
+import { Gallery } from "@/components/fresco/Gallery";
 import { ImpactResult } from "@/components/fresco/ImpactResult";
 import { FinalCTA } from "@/components/fresco/FinalCTA";
 
@@ -82,6 +83,7 @@ function Index() {
       <PriorityBars />
       <IngredientSpotlight />
       <Connection />
+      <Gallery />
       <ImpactResult />
       <FinalCTA />
 
