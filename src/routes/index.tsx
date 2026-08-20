@@ -47,7 +47,7 @@ const marqueeWords = [
 function Marquee() {
   return (
     <div className="overflow-hidden border-y-4 border-secondary bg-secondary py-4">
-      <div className="marquee flex w-max gap-10 whitespace-nowrap">
+      <div className="marquee-track flex w-max gap-10 whitespace-nowrap">
         {[...marqueeWords, ...marqueeWords, ...marqueeWords, ...marqueeWords].map((w, i) => (
           <span
             key={i}
