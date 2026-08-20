@@ -86,7 +86,7 @@ export function RestaurantLayers() {
         </div>
 
         <p className="mt-8 max-w-xl font-body text-lg text-secondary/80">
-          Nuestros ingredientes entran frescos por la puerta cada día. El sistema mira su stock, su hora de llegada y las horas que le quedan.
+          Nuestros ingredientes entran fresc por la puerta cada día. El sistema mira su stock, su hora de llegada y las horas que le quedan.
           Cuando un ingrediente está al límite, señalamos los platos que lo gastan. No cambiamos la carta: la ponemos en alerta.
         </p>
       </div>
