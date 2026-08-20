@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { motion, useScroll, useSpring } from "framer-motion";
-import logo from "@/assets/logo.asset.json";
+import logo from "@/assets/fresco-logo.png.asset.json";
 import { Hero } from "@/components/fresco/Hero";
 import { RestaurantLayers } from "@/components/fresco/RestaurantLayers";
 import { AIWatching } from "@/components/fresco/AIWatching";
