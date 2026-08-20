@@ -46,7 +46,7 @@ export function IngredientSpotlight() {
           </motion.h2>
           <p className="mt-6 max-w-md text-lg text-cream/70">
             Llegó a las 17:00 y solo aguanta 18 horas. Es el ingrediente más caro y más frágil
-            de la casa: 12 €/kg y ninguna prórroga. Así que hoy la carta la pone en primer plano.
+            de la casa: 12 €/kg y ninguna prórroga. Así que hoy señalamos los platos que la gastan.
           </p>
           <dl className="mt-8 grid max-w-md grid-cols-2 gap-4">
             {facts.map(([k, v], i) => (
