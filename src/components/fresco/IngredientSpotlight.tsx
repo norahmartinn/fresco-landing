@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
-import basil from "@/assets/basil.png";
+import basilAsset from "@/assets/albahaca-sticker.asset.json";
+const basil = basilAsset.url;
 
 const facts = [
   ["stock", "0,60 kg"],

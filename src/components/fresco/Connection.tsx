@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import basil from "@/assets/basil.png";
+import basilAsset from "@/assets/albahaca-sticker.asset.json";
+const basil = basilAsset.url;
 import pestoAsset from "@/assets/pasta-pesto-pollo.asset.json";
 
 const pesto = pestoAsset.url;
