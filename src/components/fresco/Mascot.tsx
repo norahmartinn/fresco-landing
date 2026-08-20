@@ -3,7 +3,7 @@ import mascot from "@/assets/mascot.asset.json";
 
 type Mood = "idle" | "walk" | "point" | "surprised" | "cheer";
 
-const variants: Record<Mood, object> = {
+const variants: Record<Mood, any> = {
   idle: { y: [0, -10, 0], rotate: [-2, 2, -2], transition: { duration: 4, repeat: Infinity, ease: "easeInOut" } },
   walk: { rotate: [-6, 6, -6], y: [0, -6, 0], transition: { duration: 0.7, repeat: Infinity, ease: "easeInOut" } },
   point: { rotate: [0, -8, 0], transition: { duration: 1.6, repeat: Infinity, ease: "easeInOut" } },

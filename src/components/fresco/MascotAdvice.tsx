@@ -47,7 +47,7 @@ export function MascotAdvice() {
                   exit={{ opacity: 0, y: -12 }}
                   className="inline-block rounded-2xl border-2 border-secondary bg-background px-5 py-3 font-script text-2xl text-secondary shadow-[var(--shadow-pop)]"
                 >
-                  {options[sel].a}
+                  {options[sel]?.a}
                 </motion.p>
               )}
             </AnimatePresence>
