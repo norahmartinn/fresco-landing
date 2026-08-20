@@ -136,6 +136,9 @@
 @utility live-dot {
   animation: pulse-ring 2s ease-out infinite;
 }
+@utility pulse-dot {
+  animation: pulse-ring 2s ease-out infinite;
+}
 @utility blob-shape {
   animation: blob 14s ease-in-out infinite;
 }
