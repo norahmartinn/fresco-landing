@@ -41,7 +41,7 @@ export function IngredientSpotlight() {
             viewport={{ once: true }}
             className="mt-3 text-5xl font-bold leading-[0.95] text-primary md:text-7xl"
           >
-            Hoy manda
+            Urgente hoy:
             <span className="block font-script text-cream">la albahaca.</span>
           </motion.h2>
           <p className="mt-6 max-w-md text-lg text-cream/70">
