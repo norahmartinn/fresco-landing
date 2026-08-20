@@ -1,7 +1,9 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import basil from "@/assets/basil.png";
-import pesto from "@/assets/pesto.jpg";
+import pestoAsset from "@/assets/pasta-pesto-pollo.asset.json";
+
+const pesto = pestoAsset.url;
 
 export function Connection() {
   const ref = useRef<HTMLElement | null>(null);
@@ -26,7 +28,7 @@ export function Connection() {
           <motion.div style={{ scale: dishScale, opacity: dishOpacity }} className="flex justify-center">
             <img
               src={pesto}
-              alt="Pasta al pesto"
+              alt="Pasta al pesto con pollo"
               loading="lazy"
               className="aspect-square w-40 rounded-full border-4 border-secondary object-cover md:w-64"
             />
@@ -53,7 +55,10 @@ export function Connection() {
           <span className="rounded-full bg-secondary px-4 py-2 font-display font-semibold text-primary">Albahaca</span>
           <span className="font-script text-2xl text-secondary/60">se convierte en</span>
           <span className="rounded-full bg-primary px-4 py-2 font-display font-semibold text-secondary">
-            Pasta al pesto
+            Pasta al pesto con pollo
+          </span>
+          <span className="font-mono text-xs uppercase tracking-widest text-secondary/50">
+            18 g de albahaca por ración
           </span>
         </div>
       </div>

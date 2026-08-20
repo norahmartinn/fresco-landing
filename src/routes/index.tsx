@@ -66,7 +66,7 @@ function Index() {
   const bar = useSpring(scrollYProgress, { stiffness: 120, damping: 30, restDelta: 0.001 });
 
   return (
-    <main className="overflow-x-hidden bg-background">
+    <main className="overflow-x-clip bg-background">
       <motion.div
         style={{ scaleX: bar }}
         className="fixed inset-x-0 top-0 z-50 h-1.5 origin-left bg-terracotta"

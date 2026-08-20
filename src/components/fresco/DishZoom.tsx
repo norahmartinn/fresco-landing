@@ -1,6 +1,8 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import pesto from "@/assets/pesto.jpg";
+import pestoAsset from "@/assets/pasta-pesto-pollo.asset.json";
+
+const pesto = pestoAsset.url;
 
 export function DishZoom() {
   const ref = useRef<HTMLElement | null>(null);
@@ -15,7 +17,7 @@ export function DishZoom() {
       <div className="sticky top-0 h-[100svh] overflow-hidden">
         <motion.img
           src={pesto}
-          alt="Pasta al pesto recién emplatada"
+          alt="Pasta al pesto con pollo recién emplatada"
           loading="lazy"
           style={{ scale }}
           className="h-full w-full object-cover"
@@ -28,8 +30,8 @@ export function DishZoom() {
         >
           <span className="font-mono text-xs uppercase tracking-[0.4em] text-primary/80">07 — el plato</span>
           <h2 className="mt-3 text-[clamp(2.5rem,10vw,8rem)] font-bold leading-[0.9] text-cream">
-            Pasta
-            <span className="block font-script text-primary">al pesto</span>
+            Pasta al pesto
+            <span className="block font-script text-primary">con pollo</span>
           </h2>
         </motion.div>
 
@@ -39,8 +41,8 @@ export function DishZoom() {
         >
           <p className="font-script text-2xl text-primary">hoy sale primero</p>
           <p className="mt-2 text-cream/80">
-            Albahaca del día, piñón tostado, aceite de la sierra y pecorino. Lo mismo de siempre,
-            justo cuando mejor está.
+18 g de albahaca, 120 g de pollo, 50 g de tomate y 25 g de parmesano. El mismo plato de
+            siempre, servido justo el día que la albahaca lo pide.
           </p>
         </motion.div>
       </div>

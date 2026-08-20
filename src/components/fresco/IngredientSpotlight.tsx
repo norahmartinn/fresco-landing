@@ -3,10 +3,10 @@ import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import basil from "@/assets/basil.png";
 
 const facts = [
-  ["origen", "huerta de Els Poblets"],
-  ["entrada", "hoy, 06:40"],
-  ["frescura", "92%"],
-  ["ventana", "36 h"],
+  ["stock", "0,60 kg"],
+  ["entrada", "hoy, 17:00"],
+  ["vida útil", "18 h"],
+  ["prioridad", "CRÍTICA"],
 ];
 
 export function IngredientSpotlight() {
@@ -43,7 +43,8 @@ export function IngredientSpotlight() {
             <span className="block font-script text-cream">la albahaca.</span>
           </motion.h2>
           <p className="mt-6 max-w-md text-lg text-cream/70">
-            Llegó esta mañana y está en su punto exacto. No mañana. Hoy.
+            Llegó a las 17:00 y solo aguanta 18 horas. Es el ingrediente más caro y más frágil
+            de la casa: 12 €/kg y ninguna prórroga.
           </p>
           <dl className="mt-8 grid max-w-md grid-cols-2 gap-4">
             {facts.map(([k, v], i) => (
@@ -78,7 +79,7 @@ export function IngredientSpotlight() {
             transition={{ duration: 3, repeat: Infinity }}
             className="absolute right-2 top-6 rounded-full border-2 border-primary bg-secondary px-3 py-1 font-script text-xl text-primary"
           >
-            frescura 92%
+            prioridad 96%
           </motion.span>
         </div>
       </div>

@@ -1,13 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-
-const dishes = [
-  { name: "Pasta al pesto", base: 94, why: "albahaca en su mejor día" },
-  { name: "Pollo crujiente con patata y yogur", base: 81, why: "patata a punto" },
-  { name: "Berenjena ahumada", base: 66, why: "stock alto" },
-  { name: "Ensalada de tomate y hierbas", base: 58, why: "tomate maduro" },
-  { name: "Arroz meloso de verduras", base: 37, why: "sin urgencia" },
-];
+import { dishes } from "@/data/menu";
 
 export function PriorityBars() {
   const [tick, setTick] = useState(0);
@@ -31,7 +24,7 @@ export function PriorityBars() {
         >
           <span className="font-mono text-xs uppercase tracking-[0.3em] text-leaf">04 — el sistema</span>
           <h2 className="mt-3 max-w-3xl text-balance text-4xl font-bold text-secondary md:text-6xl">
-            La carta no cambia.
+            9 platos fijos.
             <span className="block text-terracotta">Cambia quién sale primero.</span>
           </h2>
         </motion.div>
@@ -57,7 +50,9 @@ export function PriorityBars() {
                   <span className="font-display text-lg font-semibold text-secondary md:text-xl">
                     {d.name}
                   </span>
-                  <span className="font-mono text-sm tabular-nums text-secondary/70">{values[i]}%</span>
+                  <span className="font-mono text-sm tabular-nums text-secondary/70">
+                    {d.id} · {values[i]}%
+                  </span>
                 </div>
                 <div className="mt-2 h-4 overflow-hidden rounded-full bg-secondary/10">
                   <motion.div
