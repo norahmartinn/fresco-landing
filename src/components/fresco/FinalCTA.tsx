@@ -37,7 +37,7 @@ export function FinalCTA() {
           href="#carta"
           className="rounded-full border-4 border-secondary px-8 py-5 font-display text-xl font-bold text-secondary"
         >
-          Ver la carta de hoy
+          Ver la carta
         </motion.a>
       </div>
 
