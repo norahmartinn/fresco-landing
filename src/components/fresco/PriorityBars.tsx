@@ -46,11 +46,11 @@ export function PriorityBars() {
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.08 }}
               >
-                <div className="flex items-baseline justify-between gap-4">
+                <div className="flex items-baseline justify-between gap-3 md:gap-4">
                   <span className="font-display text-lg font-semibold text-secondary md:text-xl">
                     {d.name}
                   </span>
-                  <span className="font-mono text-sm tabular-nums text-secondary/70">
+                  <span className="shrink-0 whitespace-nowrap font-mono text-sm tabular-nums text-secondary/70">
                     {d.id} · {values[i]}%
                   </span>
                 </div>

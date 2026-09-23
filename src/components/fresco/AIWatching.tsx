@@ -19,7 +19,7 @@ export function AIWatching() {
   const lineProgress = useTransform(scrollYProgress, [0.3, 0.8], [0, 1]);
 
   return (
-    <section ref={ref} className="relative h-[220vh] bg-secondary">
+    <section ref={ref} className="relative h-[160vh] bg-secondary md:h-[220vh]">
       <motion.div
         style={{ backgroundColor: bg }}
         className="sticky top-0 flex h-[100svh] flex-col items-center justify-center overflow-hidden px-6"

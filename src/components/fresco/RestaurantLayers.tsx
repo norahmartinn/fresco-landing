@@ -2,11 +2,12 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import interior from "@/assets/interior.asset.json";
 
+// x/y: posición en escritorio · mx/my: en móvil, más hacia el centro para que la etiqueta no se corte
 const pins = [
-  { label: "Albahaca", pct: 96, x: "18%", y: "34%", note: "18 h de vida" },
-  { label: "Pollo", pct: 88, x: "62%", y: "22%", note: "24 h · 3,00 kg" },
-  { label: "Burrata", pct: 85, x: "76%", y: "62%", note: "24 h · 1,20 kg" },
-  { label: "Patata", pct: 31, x: "34%", y: "70%", note: "120 h · sin prisa" },
+  { label: "Albahaca", pct: 96, x: "18%", y: "34%", mx: "28%", my: "30%", note: "18 h de vida" },
+  { label: "Pollo", pct: 88, x: "62%", y: "22%", mx: "70%", my: "12%", note: "24 h · 3,00 kg" },
+  { label: "Burrata", pct: 85, x: "76%", y: "62%", mx: "70%", my: "58%", note: "24 h · 1,20 kg" },
+  { label: "Patata", pct: 31, x: "34%", y: "70%", mx: "30%", my: "84%", note: "120 h · sin prisa" },
 ];
 
 export function RestaurantLayers() {
@@ -37,7 +38,7 @@ export function RestaurantLayers() {
             alt="Interior del restaurante FRESCÓ"
             loading="lazy"
             style={{ scale }}
-            className="h-[60vh] w-full object-cover md:h-[72vh]"
+            className="h-[min(60vh,32rem)] w-full object-cover md:h-[72vh]"
           />
           <motion.div style={{ opacity: dim }} className="absolute inset-0 bg-secondary" />
           <motion.svg
@@ -56,21 +57,21 @@ export function RestaurantLayers() {
           {pins.map((p, i) => (
             <motion.div
               key={p.label}
-              style={{ left: p.x, top: p.y, opacity: grid }}
-              className="absolute -translate-x-1/2 -translate-y-1/2"
+              style={{ "--x": p.x, "--y": p.y, "--mx": p.mx, "--my": p.my, opacity: grid } as never}
+              className="absolute left-(--mx) top-(--my) -translate-x-1/2 -translate-y-1/2 md:left-(--x) md:top-(--y)"
             >
               <motion.div
                 initial={{ scale: 0.6 }}
                 whileInView={{ scale: 1 }}
                 transition={{ delay: 0.1 * i, type: "spring", stiffness: 200 }}
-                className="rounded-2xl border-2 border-primary bg-secondary/90 px-3 py-2 text-left backdrop-blur"
+                className="rounded-xl border-2 border-primary bg-secondary/90 px-2 py-1.5 text-left backdrop-blur md:rounded-2xl md:px-3 md:py-2"
               >
                 <div className="flex items-center gap-2 text-primary">
                   <span className="pulse-dot h-2 w-2 rounded-full bg-primary" />
-                  <span className="font-display text-sm font-semibold">{p.label}</span>
-                  <span className="font-mono text-xs opacity-80">{p.pct}%</span>
+                  <span className="font-display text-xs font-semibold md:text-sm">{p.label}</span>
+                  <span className="font-mono text-[0.65rem] opacity-80 md:text-xs">{p.pct}%</span>
                 </div>
-                <div className="mt-1 h-1 w-28 overflow-hidden rounded-full bg-primary/20">
+                <div className="mt-1 h-1 w-20 overflow-hidden rounded-full bg-primary/20 md:w-28">
                   <motion.div
                     initial={{ width: 0 }}
                     whileInView={{ width: `${p.pct}%` }}
@@ -79,7 +80,7 @@ export function RestaurantLayers() {
                     className="h-full rounded-full bg-primary"
                   />
                 </div>
-                <p className="mt-1 font-script text-base text-primary/80">{p.note}</p>
+                <p className="mt-1 whitespace-nowrap font-script text-sm text-primary/80 md:text-base">{p.note}</p>
               </motion.div>
             </motion.div>
           ))}

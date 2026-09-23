@@ -101,14 +101,14 @@ export function Gallery() {
             <button
               onClick={(e) => { e.stopPropagation(); go(-1); }}
               aria-label="Anterior"
-              className="absolute left-3 md:left-8 rounded-full border-2 border-cream/40 p-3 text-cream transition hover:bg-cream hover:text-secondary"
+              className="absolute bottom-8 left-[calc(50%-4rem)] rounded-full md:bottom-auto md:left-8 border-2 border-cream/40 p-3 text-cream transition hover:bg-cream hover:text-secondary"
             >
               <ChevronLeft className="h-6 w-6" />
             </button>
             <button
               onClick={(e) => { e.stopPropagation(); go(1); }}
               aria-label="Siguiente"
-              className="absolute right-3 md:right-8 rounded-full border-2 border-cream/40 p-3 text-cream transition hover:bg-cream hover:text-secondary"
+              className="absolute bottom-8 right-[calc(50%-4rem)] rounded-full md:bottom-auto md:right-8 border-2 border-cream/40 p-3 text-cream transition hover:bg-cream hover:text-secondary"
             >
               <ChevronRight className="h-6 w-6" />
             </button>

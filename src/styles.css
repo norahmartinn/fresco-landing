@@ -159,9 +159,11 @@
   transition:
     transform 0.25s ease,
     box-shadow 0.25s ease;
-  &:hover {
-    transform: translate(-3px, -3px);
-    box-shadow: 10px 10px 0 var(--secondary);
+  @media (hover: hover) {
+    &:hover {
+      transform: translate(-3px, -3px);
+      box-shadow: 10px 10px 0 var(--secondary);
+    }
   }
 }
 
